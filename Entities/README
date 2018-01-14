@@ -1,0 +1,11 @@
+Every file in this folder should be a VisionEntity Object.
+A VisionEntity consists of the following:
+  keys: the keys for the output dictionary
+  processFrame(frame): mehtod processes input 3 channel np array image
+                       method returns dictiionary containing keys from above
+                       Ideally the output can be used to later make a VisObj
+  debugFrame(name, frame): mehtod is wrapper for cv2.imshow(name, frame)
+                           the idea is that it can easily be changed is we don't want debug info
+ 
+New entities need to be added to the __init__.py function then  added to the VisionEntities dictionary
+
